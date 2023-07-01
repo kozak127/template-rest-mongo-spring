@@ -14,8 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring-boot.version>2.7.13</spring-boot.version>
-        
-        <mongodb-driver.version>3.12.10</mongodb-driver.version>
+
         <flapdoodle-mongo.version>4.6.2</flapdoodle-mongo.version>
         <swagger.version>3.0.0</swagger.version>
         
@@ -36,13 +35,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
             <version>${spring-boot.version}</version>
-        </dependency>
-
-        <!-- MongoDB Driver -->
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>${mongodb-driver.version}</version>
         </dependency>
 
         <!-- Swagger -->

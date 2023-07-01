@@ -2,8 +2,6 @@ package org.kozak127.templates.restmongospring.apple;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
-import org.kozak127.templates.restmongospring.apple.Apple;
-import org.kozak127.templates.restmongospring.apple.AppleDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
