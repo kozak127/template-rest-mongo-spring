@@ -1,7 +1,10 @@
 plugins {
     id 'org.springframework.boot' version '2.7.13'
+    id "io.freefair.lombok" version "8.1.0"
     id 'java'
 }
+
+apply plugin: 'io.spring.dependency-management'
 
 group 'org.kozak127.templates'
 version '1.0.0'
@@ -12,20 +15,16 @@ repositories {
 
 dependencies {
     // CORE
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.13'
-    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.7.13'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     implementation 'io.springfox:springfox-boot-starter:3.0.0'
     implementation 'io.springfox:springfox-swagger-ui:3.0.0'
 
     // TEST
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.13'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.6.2'
     testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring27x:4.6.2'
     testImplementation 'org.assertj:assertj-core:3.24.2'
-
-    // LOMBOK
-    compileOnly  'org.projectlombok:lombok:1.18.28'
-    annotationProcessor 'org.projectlombok:lombok:1.18.28'
 }
 
 test {
